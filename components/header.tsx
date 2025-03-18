@@ -21,19 +21,19 @@ export default function Header() {
         <nav className="hidden md:flex items-center space-x-6">
           <Link
             href="/services"
-            className="text-sm font-medium hover:text-white/80 transition-colors"
+            className="text-sm font-medium hover:text-white/80 transition-colors active:border-white active:border-2"
           >
             Services
           </Link>
           <Link
             href="/about"
-            className="text-sm font-medium hover:text-white/80 transition-colors"
+            className="text-sm font-medium hover:text-white/80 transition-colors active:border-white active:border-2"
           >
             About Us
           </Link>
           <Link
             href="/team"
-            className="text-sm font-medium hover:text-white/80 transition-colors"
+            className="text-sm font-medium hover:text-white/80 transition-colors active:border-white active:border-2"
           >
             Our Team
           </Link>
@@ -42,7 +42,7 @@ export default function Header() {
             variant="secondary"
             className="bg-white text-primary hover:bg-white/90"
           >
-            <Link href="/contact">Contact Us</Link>
+            <a href="mailto:info@peopleapexsolution.org">Contact Us</a>
           </Button>
         </nav>
 

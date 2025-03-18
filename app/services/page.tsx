@@ -198,7 +198,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Case Studies */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white hidden">
         <div className="container space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-3xl font-bold text-gray-800">
@@ -298,7 +298,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 hidden">
         <div className="container space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-3xl font-bold text-gray-800">
@@ -388,7 +388,7 @@ export default function ServicesPage() {
               variant="secondary"
               className="bg-white text-primary hover:bg-white/90"
             >
-              <Link href="/contact">Get in Touch</Link>
+              <a href="mailto:info@peopleapexsolution.org">Get in Touch</a>
             </Button>
           </div>
         </div>

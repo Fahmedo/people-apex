@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import { ServiceCard } from '@/components/service-card';
 import { TeamMember } from '@/components/team-member';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -28,14 +29,16 @@ export default function Home() {
               Integrity, Innovation, Empowerment and Collaboration
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-primary hover:bg-[#5a0b8d]">
-                Our Services <ChevronRight className="ml-2 h-4 w-4" />
-              </Button>
+              <Link href="/services">
+                <Button className="bg-primary hover:bg-[#5a0b8d]">
+                  Our Services <ChevronRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
               <Button
                 variant="outline"
                 className="border-primary text-primary hover:bg-primary hover:text-white"
               >
-                Contact Us
+                <a href="mailto:info@peopleapexsolution.org">Contact Us</a>
               </Button>
             </div>
           </div>
@@ -110,7 +113,7 @@ export default function Home() {
               image="/team/team-member1.webp"
               name="Lilian Ofere-Nosakhare"
               position="CEO & Founder"
-              bio="With over 15 years of experience in HR leadership, Lilian founded People Apex Solution to transform how businesses approach talent management."
+              bio="With over 10 years of experience in HR leadership, Lilian founded People Apex Solution to transform how businesses approach talent management."
             />
             {/* <TeamMember
               image="/placeholder.svg?height=400&width=400"
@@ -160,9 +163,11 @@ export default function Home() {
                 is dedicated to delivering exceptional service and measurable
                 results for our clients.
               </p>
-              <Button className="bg-primary hover:bg-[#5a0b8d]">
-                Learn More About Us
-              </Button>
+              <Link href="/about">
+                <Button className="bg-primary hover:bg-[#5a0b8d]">
+                  Learn More About Us
+                </Button>
+              </Link>
             </div>
             <div className="bg-primary rounded-lg p-8 text-white">
               <h3 className="text-2xl font-bold mb-4">Our Core Values</h3>

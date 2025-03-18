@@ -1,7 +1,14 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Facebook, Twitter, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import {
+  Facebook,
+  Linkedin,
+  Mail,
+  Phone,
+  MapPin,
+  Instagram,
+} from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -19,21 +26,21 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <Link
-                href="#"
+                href="https://www.facebook.com/share/1AhDGx17Vs/?mibextid=wwXIfr"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
               <Link
-                href="#"
+                href="https://www.instagram.com/peopleapexsolution?igsh=NXNxZXdrOXNqdGxn&utm_source=qr"
                 className="text-gray-400 hover:text-white transition-colors"
               >
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
+                <Instagram className="h-5 w-5" />
+                <span className="sr-only">Instagram</span>
               </Link>
               <Link
-                href="#"
+                href=" https://www.linkedin.com/company/people-apex-solution/"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
@@ -70,7 +77,7 @@ export default function Footer() {
                   Our Team
                 </Link>
               </li>
-              <li>
+              <li className="hidden">
                 <Link
                   href="/contact"
                   className="text-gray-400 hover:text-white transition-colors"
@@ -93,12 +100,12 @@ export default function Footer() {
               </li>
               <li className="flex items-start">
                 <Phone className="h-5 w-5 mr-2 text-primary" />
-                <span className="text-gray-400">+1 (123) 456-7890</span>
+                <span className="text-gray-400">08134677442</span>
               </li>
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 text-primary" />
                 <span className="text-gray-400">
-                  123 Business Avenue, Suite 100, City, State 12345
+                  1135, Royal Pine Estate, Orchid, Road, Lekki, Lagos, Nigeria.
                 </span>
               </li>
             </ul>

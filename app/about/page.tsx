@@ -34,17 +34,17 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold text-gray-800">Our Story</h2>
               <div className="w-24 h-1 bg-primary"></div>
               <p className="text-gray-600">
-                People Apex Solution was founded in 2015 with a clear mission:
+                People Apex Solution was founded in 2025 with a clear mission:
                 to help organizations unlock the full potential of their most
                 valuable asset—their people.
               </p>
               <p className="text-gray-600">
-                Our founder, Sarah Johnson, recognized that many businesses were
-                struggling with HR challenges that were holding them back from
-                achieving their goals. Drawing on her extensive experience in
-                human resources leadership, she assembled a team of experts
-                dedicated to transforming how organizations approach talent
-                management.
+                Our founder,Lilian Ofere-Nosakharen, recognized that many
+                businesses were struggling with HR challenges that were holding
+                them back from achieving their goals. Drawing on her extensive
+                experience in human resources leadership, she assembled a team
+                of experts dedicated to transforming how organizations approach
+                talent management.
               </p>
               <p className="text-gray-600">
                 Since then, we've grown into a trusted partner for businesses of
@@ -315,7 +315,7 @@ export default function AboutPage() {
             <div className="flex flex-col md:flex-row">
               <div className="md:w-1/4 flex justify-center md:justify-start">
                 <div className="bg-primary text-white px-4 py-2 rounded-md font-bold text-xl">
-                  2015
+                  2025
                 </div>
               </div>
               <div className="md:w-3/4 mt-4 md:mt-0">
@@ -331,7 +331,7 @@ export default function AboutPage() {
             <div className="flex flex-col md:flex-row">
               <div className="md:w-1/4 flex justify-center md:justify-start">
                 <div className="bg-primary text-white px-4 py-2 rounded-md font-bold text-xl">
-                  2017
+                  2025
                 </div>
               </div>
               <div className="md:w-3/4 mt-4 md:mt-0">
@@ -347,7 +347,7 @@ export default function AboutPage() {
             <div className="flex flex-col md:flex-row">
               <div className="md:w-1/4 flex justify-center md:justify-start">
                 <div className="bg-primary text-white px-4 py-2 rounded-md font-bold text-xl">
-                  2019
+                  2025
                 </div>
               </div>
               <div className="md:w-3/4 mt-4 md:mt-0">
@@ -363,7 +363,7 @@ export default function AboutPage() {
             <div className="flex flex-col md:flex-row">
               <div className="md:w-1/4 flex justify-center md:justify-start">
                 <div className="bg-primary text-white px-4 py-2 rounded-md font-bold text-xl">
-                  2021
+                  2025
                 </div>
               </div>
               <div className="md:w-3/4 mt-4 md:mt-0">
@@ -379,7 +379,7 @@ export default function AboutPage() {
             <div className="flex flex-col md:flex-row">
               <div className="md:w-1/4 flex justify-center md:justify-start">
                 <div className="bg-primary text-white px-4 py-2 rounded-md font-bold text-xl">
-                  2023
+                  2025
                 </div>
               </div>
               <div className="md:w-3/4 mt-4 md:mt-0">
@@ -409,7 +409,7 @@ export default function AboutPage() {
               conversation.
             </p>
             <Button asChild className="bg-primary hover:bg-[#5a0b8d]">
-              <Link href="/contact">Get in Touch</Link>
+              <a href="mailto:info@peopleapexsolution.org">Get in Touch</a>
             </Button>
           </div>
         </div>
