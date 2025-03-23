@@ -19,6 +19,7 @@ import {
   PieChart,
   CheckCircle,
 } from 'lucide-react';
+import { OurApproach } from './data';
 
 export default function ServicesPage() {
   return (
@@ -50,8 +51,8 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ServiceCard
               icon={<Users className="h-10 w-10 text-primary" />}
-              title="Talent Acquisition"
-              description="Strategic recruitment and selection processes to find the right talent for your organization."
+              title="Talent Acquisition & Recruitment:"
+              description="We specialize in finding and placing the right talent to drive your business forward, ensuring alignment with your organizational culture and goals."
               features={[
                 'Job analysis and description development',
                 'Candidate sourcing and screening',
@@ -61,8 +62,8 @@ export default function ServicesPage() {
             />
             <ServiceCard
               icon={<BarChart className="h-10 w-10 text-primary" />}
-              title="Performance Management"
-              description="Comprehensive systems to evaluate, improve and reward employee performance."
+              title="Outsourcing"
+              description="Streamline your operations by entrusting us with comprehensive HR functions, allowing your team to focus on core objectives while we handle your people needs."
               features={[
                 'Performance review framework design',
                 'Goal setting and KPI development',
@@ -72,8 +73,8 @@ export default function ServicesPage() {
             />
             <ServiceCard
               icon={<Award className="h-10 w-10 text-primary" />}
-              title="Training & Development"
-              description="Custom learning programs to enhance skills and foster professional growth."
+              title="Culture Consulting & Projects"
+              description="We partner with organizations to cultivate a positive and productive work culture, guiding teams through transformations that improve engagement and performance."
               features={[
                 'Training needs assessment',
                 'Curriculum development',
@@ -83,8 +84,8 @@ export default function ServicesPage() {
             />
             <ServiceCard
               icon={<MessageSquare className="h-10 w-10 text-primary" />}
-              title="HR Consulting"
-              description="Expert advice on HR strategy, compliance, and organizational development."
+              title="Startup Support:"
+              description="Our expert team helps startups establish solid HR foundations, from recruitment to employee policies, setting you up for sustainable growth."
               features={[
                 'HR department assessment',
                 'Strategic HR planning',
@@ -94,8 +95,8 @@ export default function ServicesPage() {
             />
             <ServiceCard
               icon={<FileText className="h-10 w-10 text-primary" />}
-              title="Policy Development"
-              description="Creation and implementation of effective HR policies and procedures."
+              title="HR Compliance & Policy"
+              description="Stay compliant and safeguard your business with policies and processes that meet regulatory standards and reflect best practices in HR."
               features={[
                 'Employee handbook creation',
                 'Policy review and updates',
@@ -103,32 +104,11 @@ export default function ServicesPage() {
                 'Standard operating procedures',
               ]}
             />
-            <ServiceCard
-              icon={<Shield className="h-10 w-10 text-primary" />}
-              title="Compliance Management"
-              description="Ensuring your organization meets all legal and regulatory requirements."
-              features={[
-                'Regulatory compliance audits',
-                'Risk assessment and mitigation',
-                'Employment law guidance',
-                'Compliance training programs',
-              ]}
-            />
-            <ServiceCard
-              icon={<Briefcase className="h-10 w-10 text-primary" />}
-              title="Employee Relations"
-              description="Building positive workplace cultures and resolving workplace issues."
-              features={[
-                'Conflict resolution processes',
-                'Employee engagement initiatives',
-                'Workplace investigation support',
-                'Communication strategy development',
-              ]}
-            />
+
             <ServiceCard
               icon={<PieChart className="h-10 w-10 text-primary" />}
-              title="HR Analytics"
-              description="Data-driven insights to inform strategic HR and business decisions."
+              title="Workforce Planning"
+              description="We help you strategically manage your workforce, planning for future needs to ensure your organization is always equipped with the right skills and talent."
               features={[
                 'HR metrics identification and tracking',
                 'Data collection and analysis',
@@ -147,53 +127,32 @@ export default function ServicesPage() {
             <h2 className="text-3xl font-bold text-gray-800">Our Approach</h2>
             <div className="w-24 h-1 bg-primary mx-auto"></div>
             <p className="max-w-2xl mx-auto text-gray-600">
-              We follow a structured methodology to understand your needs and
-              deliver tailored solutions.
+              At People Apex Solution, our approach is rooted in the belief that
+              every organization is unique, and so are its HR needs. We take a
+              proactive, strategic, and customized approach to address the
+              specific challenges and goals of our clients. Our methodology is
+              built on three core pillars:
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
-                1
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {OurApproach.map((d, index) => (
+              <div className="text-center" key={index}>
+                <div className="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                  {index + 1}
+                </div>
+                <h3 className="text-xl font-bold mb-2">{d.title}</h3>
+                <p className="text-gray-600">{d.description}</p>
               </div>
-              <h3 className="text-xl font-bold mb-2">Assessment</h3>
-              <p className="text-gray-600">
-                We analyze your current HR practices and identify areas for
-                improvement.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
-                2
-              </div>
-              <h3 className="text-xl font-bold mb-2">Strategy</h3>
-              <p className="text-gray-600">
-                We develop a customized plan aligned with your business
-                objectives.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
-                3
-              </div>
-              <h3 className="text-xl font-bold mb-2">Implementation</h3>
-              <p className="text-gray-600">
-                We execute the plan with careful attention to detail and
-                stakeholder needs.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
-                4
-              </div>
-              <h3 className="text-xl font-bold mb-2">Evaluation</h3>
-              <p className="text-gray-600">
-                We measure results and refine our approach for continuous
-                improvement.
-              </p>
-            </div>
+            ))}
           </div>
+          <p className="max-w-4xl mx-auto text-gray-600 mt-8 border-l-4 border-primary px-2">
+            From recruitment and talent acquisition to workforce planning and
+            compliance, our comprehensive suite of services is tailored to meet
+            your specific needs. We take the time to understand your business,
+            identify opportunities for improvement, and deliver solutions that
+            drive tangible outcomes.
+          </p>
         </div>
       </section>
 

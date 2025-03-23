@@ -1,9 +1,17 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ChevronRight } from 'lucide-react';
-
+import { useState } from 'react';
+import { WhatSetsUsApert } from './data';
 export default function AboutPage() {
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
+
+  const toggleAccordion = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
@@ -23,7 +31,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/ceo.jpeg"
                 alt="Our Story"
                 width={600}
                 height={400}
@@ -34,24 +42,36 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold text-gray-800">Our Story</h2>
               <div className="w-24 h-1 bg-primary"></div>
               <p className="text-gray-600">
-                People Apex Solution was founded in 2025 with a clear mission:
-                to help organizations unlock the full potential of their most
-                valuable asset—their people.
+                People Apex Solution was founded with a bold vision: to
+                transform the role of Human Resources in today’s workplace.
+                Recognizing the challenges organizations face in managing and
+                empowering their workforce amidst a rapidly changing business
+                environment, our founder, Lilian Ofere-Nosakhare, set out to
+                create a company that bridges the gap between traditional HR
+                practices and the evolving needs of modern businesses.
               </p>
               <p className="text-gray-600">
-                Our founder,Lilian Ofere-Nosakharen, recognized that many
-                businesses were struggling with HR challenges that were holding
-                them back from achieving their goals. Drawing on her extensive
-                experience in human resources leadership, she assembled a team
-                of experts dedicated to transforming how organizations approach
-                talent management.
+                Driven by a profound understanding of the transformative power
+                of people-centric strategies, we embarked on a mission to help
+                organizations unlock the full potential of their teams. Since
+                our establishment in January 2024, we have been guided by a
+                passion for innovation, a commitment to excellence, and the
+                unwavering belief that people are the foundation of
+                organizational success.
               </p>
               <p className="text-gray-600">
-                Since then, we've grown into a trusted partner for businesses of
-                all sizes across various industries. Our client-centered
-                approach and commitment to excellence have earned us a
-                reputation for delivering measurable results and exceptional
-                service.
+                Over time, we have grown into a trusted partner for businesses
+                across various industries, offering tailored HR solutions that
+                drive growth, promote inclusivity, and build sustainable
+                workplaces. Our journey is rooted in dedication, collaboration,
+                and a relentless focus on empowering organizations to thrive
+                through their greatest asset—their people.
+              </p>
+              <p className="text-gray-600">
+                Today, we take pride in our reputation for delivering impactful
+                results and helping our clients navigate the complexities of the
+                modern business world. Our story is a testament to the power of
+                putting people first and reimagining what HR can achieve.
               </p>
             </div>
           </div>
@@ -110,7 +130,8 @@ export default function AboutPage() {
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto"></div>
             <p className="max-w-2xl mx-auto text-gray-600">
-              These principles guide our actions and decisions every day.
+              Transparency and trustworthiness are at the heart of everything we
+              do.
             </p>
           </div>
 
@@ -122,8 +143,7 @@ export default function AboutPage() {
               <div>
                 <h4 className="text-xl font-bold text-gray-800">Integrity</h4>
                 <p className="text-gray-600">
-                  We uphold the highest ethical standards in all our
-                  interactions. We are honest, transparent, and accountable in
+                  Transparency and trustworthiness are at the heart of
                   everything we do.
                 </p>
               </div>
@@ -135,9 +155,8 @@ export default function AboutPage() {
               <div>
                 <h4 className="text-xl font-bold text-gray-800">Innovation</h4>
                 <p className="text-gray-600">
-                  We continuously seek new and better ways to serve our clients.
-                  We embrace creativity and forward-thinking approaches to solve
-                  complex HR challenges.
+                  We constantly adapt and innovate to meet the changing needs of
+                  our clients.
                 </p>
               </div>
             </div>
@@ -148,9 +167,8 @@ export default function AboutPage() {
               <div>
                 <h4 className="text-xl font-bold text-gray-800">Empowerment</h4>
                 <p className="text-gray-600">
-                  We enable organizations and individuals to reach their full
-                  potential. We believe in providing the tools, knowledge, and
-                  support needed for success.
+                  We empower both employers and employees to reach their full
+                  potential.
                 </p>
               </div>
             </div>
@@ -163,9 +181,8 @@ export default function AboutPage() {
                   Collaboration
                 </h4>
                 <p className="text-gray-600">
-                  We work together with our clients to achieve shared goals. We
-                  value partnerships built on trust, respect, and open
-                  communication.
+                  Our success is driven by close partnerships with clients,
+                  understanding that each organization is unique.
                 </p>
               </div>
             </div>
@@ -176,76 +193,45 @@ export default function AboutPage() {
       {/* Our Approach */}
       <section className="py-16 bg-gray-50">
         <div className="container">
-          <div className="text-center space-y-4 mb-12">
-            <h2 className="text-3xl font-bold text-gray-800">Our Approach</h2>
-            <div className="w-24 h-1 bg-primary mx-auto"></div>
-            <p className="max-w-2xl mx-auto text-gray-600">
-              We believe in a client-centered approach that focuses on
-              understanding your unique needs and delivering tailored solutions.
-            </p>
-          </div>
-
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div className="p-8 space-y-4">
                 <h3 className="text-2xl font-bold text-gray-800">
                   What Sets Us Apart
                 </h3>
+                <p className="text-gray-600">
+                  In a crowded HR landscape, People Apex Solution stands out as
+                  a trusted partner that goes beyond traditional HR practices.
+                  Here’s what makes us unique:
+                </p>
                 <ul className="space-y-4">
-                  <li className="flex items-start">
-                    <div className="mr-4 bg-primary/10 text-primary rounded-full p-1">
-                      <ChevronRight className="h-5 w-5" />
-                    </div>
-                    <div>
-                      <h4 className="font-bold">Tailored Solutions</h4>
-                      <p className="text-gray-600">
-                        We don't believe in one-size-fits-all approaches. We
-                        customize our services to address your specific
-                        challenges and goals.
-                      </p>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="mr-4 bg-primary/10 text-primary rounded-full p-1">
-                      <ChevronRight className="h-5 w-5" />
-                    </div>
-                    <div>
-                      <h4 className="font-bold">Experienced Team</h4>
-                      <p className="text-gray-600">
-                        Our consultants bring decades of combined experience
-                        across various industries and HR specialties.
-                      </p>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="mr-4 bg-primary/10 text-primary rounded-full p-1">
-                      <ChevronRight className="h-5 w-5" />
-                    </div>
-                    <div>
-                      <h4 className="font-bold">Results-Driven</h4>
-                      <p className="text-gray-600">
-                        We focus on delivering measurable outcomes that
-                        contribute to your organization's success.
-                      </p>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="mr-4 bg-primary/10 text-primary rounded-full p-1">
-                      <ChevronRight className="h-5 w-5" />
-                    </div>
-                    <div>
-                      <h4 className="font-bold">Ongoing Support</h4>
-                      <p className="text-gray-600">
-                        We build long-term partnerships with our clients,
-                        providing continuous guidance and support.
-                      </p>
-                    </div>
-                  </li>
+                  {WhatSetsUsApert.map((d, index) => (
+                    <li key={index} className="flex flex-col ">
+                      <div
+                        className="flex items-center cursor-pointer "
+                        onClick={() => toggleAccordion(index)}
+                      >
+                        <div
+                          className={`mr-4 bg-primary/10 text-primary rounded-full p-1 transition-transform  ${
+                            openIndex === index ? 'rotate-90' : ''
+                          }`}
+                        >
+                          <ChevronRight className="h-5 w-5" />
+                        </div>
+                        <h4 className="font-bold border-b-2 border-primary">
+                          {d.title}
+                        </h4>
+                      </div>
+                      {openIndex === index && (
+                        <p className="text-gray-600 mt-2 ">{d.details}</p>
+                      )}
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div className="relative min-h-[300px]">
                 <Image
-                  src="/placeholder.svg?height=600&width=800"
+                  src="/our-story.jpg"
                   alt="Our approach"
                   fill
                   className="object-cover"
@@ -257,7 +243,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team Highlight */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white hidden">
         <div className="container">
           <div className="text-center space-y-4 mb-12">
             <h2 className="text-3xl font-bold text-gray-800">Meet Our Team</h2>
@@ -301,7 +287,7 @@ export default function AboutPage() {
       </section>
 
       {/* Milestones */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 hidden">
         <div className="container">
           <div className="text-center space-y-4 mb-12">
             <h2 className="text-3xl font-bold text-gray-800">Our Journey</h2>
@@ -315,7 +301,7 @@ export default function AboutPage() {
             <div className="flex flex-col md:flex-row">
               <div className="md:w-1/4 flex justify-center md:justify-start">
                 <div className="bg-primary text-white px-4 py-2 rounded-md font-bold text-xl">
-                  2025
+                  2015
                 </div>
               </div>
               <div className="md:w-3/4 mt-4 md:mt-0">
@@ -331,7 +317,7 @@ export default function AboutPage() {
             <div className="flex flex-col md:flex-row">
               <div className="md:w-1/4 flex justify-center md:justify-start">
                 <div className="bg-primary text-white px-4 py-2 rounded-md font-bold text-xl">
-                  2025
+                  2017
                 </div>
               </div>
               <div className="md:w-3/4 mt-4 md:mt-0">
@@ -347,7 +333,7 @@ export default function AboutPage() {
             <div className="flex flex-col md:flex-row">
               <div className="md:w-1/4 flex justify-center md:justify-start">
                 <div className="bg-primary text-white px-4 py-2 rounded-md font-bold text-xl">
-                  2025
+                  2019
                 </div>
               </div>
               <div className="md:w-3/4 mt-4 md:mt-0">
@@ -363,7 +349,7 @@ export default function AboutPage() {
             <div className="flex flex-col md:flex-row">
               <div className="md:w-1/4 flex justify-center md:justify-start">
                 <div className="bg-primary text-white px-4 py-2 rounded-md font-bold text-xl">
-                  2025
+                  2021
                 </div>
               </div>
               <div className="md:w-3/4 mt-4 md:mt-0">
@@ -379,7 +365,7 @@ export default function AboutPage() {
             <div className="flex flex-col md:flex-row">
               <div className="md:w-1/4 flex justify-center md:justify-start">
                 <div className="bg-primary text-white px-4 py-2 rounded-md font-bold text-xl">
-                  2025
+                  2023
                 </div>
               </div>
               <div className="md:w-3/4 mt-4 md:mt-0">
@@ -397,7 +383,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-primary/10">
+      <section className="py-16 bg-primary/10 hidden">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <h2 className="text-3xl font-bold text-gray-800">
@@ -409,7 +395,7 @@ export default function AboutPage() {
               conversation.
             </p>
             <Button asChild className="bg-primary hover:bg-[#5a0b8d]">
-              <a href="mailto:info@peopleapexsolution.org">Get in Touch</a>
+              <Link href="/contact">Get in Touch</Link>
             </Button>
           </div>
         </div>

@@ -1,5 +1,4 @@
 'use client';
-
 import { useState } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -21,19 +20,19 @@ export default function Header() {
         <nav className="hidden md:flex items-center space-x-6">
           <Link
             href="/services"
-            className="text-sm font-medium hover:text-white/80 transition-colors active:border-white active:border-2"
+            className="text-sm font-medium hover:text-white/80 transition-colors active:border-white active:border-b-2"
           >
             Services
           </Link>
           <Link
             href="/about"
-            className="text-sm font-medium hover:text-white/80 transition-colors active:border-white active:border-2"
+            className="text-sm font-medium hover:text-white/80 transition-colors active:border-white active:border-b-2"
           >
             About Us
           </Link>
           <Link
             href="/team"
-            className="text-sm font-medium hover:text-white/80 transition-colors active:border-white active:border-2"
+            className="text-sm font-medium hover:text-white/80 transition-colors active:border-white active:border-b-2"
           >
             Our Team
           </Link>
