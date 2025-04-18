@@ -39,7 +39,7 @@ export default function Home() {
                 variant="outline"
                 className="border-primary text-primary hover:bg-primary hover:text-white"
               >
-                Contact Us
+                <a href="mailto:info@peopleapexsolution.org">Contact Us</a>
               </Button>
             </div>
           </div>
@@ -125,7 +125,7 @@ export default function Home() {
               image="/team/team-member1.webp"
               name="Lilian Ofere-Nosakhare"
               position="CEO & Founder"
-              bio="With over 15 years of experience in HR leadership, Lilian founded People Apex Solution to transform how businesses approach talent management."
+              bio="With over 10 years of experience in HR leadership, Lilian founded People Apex Solution to transform how businesses approach talent management."
             />
             {/* <TeamMember
               image="/placeholder.svg?height=400&width=400"
