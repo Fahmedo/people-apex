@@ -90,7 +90,7 @@ export default function Header() {
               className="bg-white text-primary hover:bg-white/90 w-full"
               onClick={() => setIsMenuOpen(false)}
             >
-              <Link href="/contact">Contact Us</Link>
+              <a href="mailto:info@peopleapexsolution.org">Contact Us</a>
             </Button>
           </nav>
         </div>
