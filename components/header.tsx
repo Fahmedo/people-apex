@@ -30,12 +30,12 @@ export default function Header() {
           >
             About Us
           </Link>
-          <Link
+          {/* <Link
             href="/team"
             className="text-sm font-medium hover:text-white/80 transition-colors active:border-white active:border-b-2"
           >
             Our Team
-          </Link>
+          </Link> */}
           <Button
             asChild
             variant="secondary"
@@ -77,13 +77,13 @@ export default function Header() {
             >
               About Us
             </Link>
-            <Link
+            {/* <Link
               href="/team"
               className="text-sm font-medium py-2 hover:text-white/80 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Our Team
-            </Link>
+            </Link> */}
             <Button
               asChild
               variant="secondary"

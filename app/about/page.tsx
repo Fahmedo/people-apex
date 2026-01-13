@@ -31,7 +31,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <Image
-                src="/ceo.jpeg"
+                src="/about-us.jpg"
                 alt="Our Story"
                 width={600}
                 height={400}
@@ -42,36 +42,37 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold text-gray-800">Our Story</h2>
               <div className="w-24 h-1 bg-primary"></div>
               <p className="text-gray-600">
-                People Apex Solution was founded with a bold vision: to
-                transform the role of Human Resources in today’s workplace.
-                Recognizing the challenges organizations face in managing and
-                empowering their workforce amidst a rapidly changing business
-                environment, our founder, Lilian Ofere-Nosakhare, set out to
-                create a company that bridges the gap between traditional HR
-                practices and the evolving needs of modern businesses.
+                People Apex Solution was established to address a critical gap
+                in how organizations attract, manage, and retain talent in an
+                increasingly complex business environment. Built through a
+                strategic partnership, the firm was designed to modernize Human
+                Resources by combining structured HR fundamentals with agile,
+                people-centric solutions aligned to today’s business realities.
               </p>
               <p className="text-gray-600">
-                Driven by a profound understanding of the transformative power
-                of people-centric strategies, we embarked on a mission to help
-                organizations unlock the full potential of their teams. Since
-                our establishment in January 2024, we have been guided by a
-                passion for innovation, a commitment to excellence, and the
-                unwavering belief that people are the foundation of
-                organizational success.
+                Since its establishment in January 2024, People Apex Solution
+                has operated with a clear commercial objective: to enable
+                organizations drive performance, mitigate people-related risks,
+                and achieve sustainable growth through effective workforce
+                strategies. The firm delivers measurable value by aligning HR
+                operations with business goals, improving talent outcomes, and
+                strengthening organizational capability.
               </p>
               <p className="text-gray-600">
-                Over time, we have grown into a trusted partner for businesses
-                across various industries, offering tailored HR solutions that
-                drive growth, promote inclusivity, and build sustainable
-                workplaces. Our journey is rooted in dedication, collaboration,
-                and a relentless focus on empowering organizations to thrive
-                through their greatest asset—their people.
+                The company has rapidly evolved into a trusted HR partner across
+                multiple industries, providing scalable solutions in talent
+                acquisition, HR advisory, organizational development, and
+                workforce optimization. Its partnership-led model allows for
+                flexibility, cost efficiency, and tailored service delivery, key
+                drivers of client retention and long-term value.
               </p>
               <p className="text-gray-600">
-                Today, we take pride in our reputation for delivering impactful
-                results and helping our clients navigate the complexities of the
-                modern business world. Our story is a testament to the power of
-                putting people first and reimagining what HR can achieve.
+                The company has rapidly evolved into a trusted HR partner across
+                multiple industries, providing scalable solutions in talent
+                acquisition, HR advisory, organizational development, and
+                workforce optimization. Its partnership-led model allows for
+                flexibility, cost efficiency, and tailored service delivery, key
+                drivers of client retention and long-term value.
               </p>
             </div>
           </div>

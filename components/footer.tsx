@@ -69,14 +69,14 @@ export default function Footer() {
                   About Us
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="/team"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Our Team
                 </Link>
-              </li>
+              </li> */}
               <li className="hidden">
                 <Link
                   href="/contact"
@@ -112,7 +112,7 @@ export default function Footer() {
           </div>
 
           {/* Newsletter */}
-          <div className="space-y-4">
+          <div className="space-y-4 hidden">
             <h3 className="text-xl font-bold">Newsletter</h3>
             <p className="text-gray-400">
               Subscribe to our newsletter for the latest updates and insights.

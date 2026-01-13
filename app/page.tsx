@@ -107,7 +107,7 @@ export default function Home() {
       </section>
 
       {/* Our Team Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white hidden">
         <div className="container space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
